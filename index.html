@@ -1,113 +1,83 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tesnus Company | Official Business Page</title>
-  <meta
-    name="description"
-    content="Official business verification page for Microsoft developer account validation."
-  />
+  <title>박제현 | 공식 사업자 정보</title>
+  <meta name="description" content="박제현 공식 사업자 정보 페이지" />
   <style>
     :root {
-      --bg: #f5f7fa;
-      --card: #ffffff;
-      --text: #0f172a;
-      --subtle: #64748b;
-      --line: #d9e2ec;
-      --accent: #2563eb;
+      --ink: #172036;
+      --muted: #637083;
+      --line: #dce3ea;
+      --paper: #ffffff;
+      --accent: #174f43;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top right, #e2ecff 0%, var(--bg) 45%);
-      color: var(--text);
-      line-height: 1.6;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: var(--ink);
+      font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+      background:
+        linear-gradient(135deg, rgba(23, 79, 67, 0.08), transparent 45%),
+        #f4f1e9;
     }
-    .wrap {
-      max-width: 840px;
-      margin: 0 auto;
-      padding: 48px 20px 72px;
-    }
-    .card {
-      background: var(--card);
+    main {
+      width: min(720px, 100%);
+      padding: clamp(28px, 6vw, 56px);
+      background: var(--paper);
       border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 28px;
-      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+      border-top: 6px solid var(--accent);
+      box-shadow: 0 18px 55px rgba(23, 32, 54, 0.09);
     }
-    h1 { margin: 0 0 8px; font-size: 2rem; line-height: 1.2; }
-    p { margin: 0 0 14px; color: var(--subtle); }
-    h2 {
-      margin: 28px 0 10px;
-      font-size: 1.1rem;
-      color: #0f172a;
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 6vw, 3.4rem);
+      letter-spacing: -0.06em;
+    }
+    .subtitle {
+      margin: 0 0 36px;
+      color: var(--muted);
+    }
+    dl {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      margin: 0;
       border-top: 1px solid var(--line);
-      padding-top: 18px;
     }
-    dl { display: grid; grid-template-columns: 200px 1fr; gap: 8px 16px; margin: 0; }
-    dt { color: var(--text); font-weight: 600; }
-    dd { margin: 0; color: var(--subtle); }
-    .notice {
-      margin-top: 24px;
-      padding: 14px;
-      border-left: 3px solid var(--accent);
-      background: #eff6ff;
-      border-radius: 6px;
+    dt, dd {
+      margin: 0;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
     }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    @media (max-width: 650px) {
+    dt { font-weight: 700; }
+    dd { color: var(--muted); }
+    a { color: var(--accent); text-underline-offset: 4px; }
+    @media (max-width: 560px) {
       dl { grid-template-columns: 1fr; }
-      dt { margin-top: 6px; }
-      .wrap { padding-top: 24px; }
+      dt { padding-bottom: 4px; border-bottom: 0; }
+      dd { padding-top: 0; }
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <main class="card">
-      <header>
-        <p>Microsoft Partner / Developer verification page</p>
-        <h1>Tesnus Company</h1>
-      </header>
-
-      <h2>Company information</h2>
-      <dl>
-        <dt>Company name</dt>
-        <dd>[Your exact registered company name]</dd>
-
-        <dt>Business registration number</dt>
-        <dd>[Business registration number]</dd>
-
-        <dt>Representative</dt>
-        <dd>[CEO / representative name]</dd>
-
-        <dt>Registered address</dt>
-        <dd>[Full business address: street, city, postal code]</dd>
-
-        <dt>Business email</dt>
-        <dd><a href="mailto:contact@tesnus.com">contact@tesnus.com</a></dd>
-
-        <dt>Official website</dt>
-        <dd><a href="https://www.tesnus.com" rel="noopener noreferrer">https://www.tesnus.com</a></dd>
-
-        <dt>Phone</dt>
-        <dd>+82-[country code + phone number]</dd>
-      </dl>
-
-      <h2>Purpose of this page</h2>
-      <p>
-        This page exists only to provide official business contact and registration information for account verification.
-        If you publish this page, keep all details consistent with your legal documents and Microsoft account profile.
-      </p>
-
-      <div class="notice">
-        Last updated: <time datetime="2026-08-20">2026-08-20</time>. For Microsoft verification, add your real business details exactly as they appear on official documents.
-      </div>
-    </main>
-  </div>
+  <main>
+    <h1>박제현</h1>
+    <p class="subtitle">공식 사업자 정보</p>
+    <dl>
+      <dt>상호</dt>
+      <dd>박제현</dd>
+      <dt>대표자</dt>
+      <dd>박제현</dd>
+      <dt>사업장 주소</dt>
+      <dd>전남광주통합특별시 북구 경양로73번길 30-4, 1층(신안동)</dd>
+      <dt>공식 웹사이트</dt>
+      <dd><a href="https://bccccd.kr">https://bccccd.kr</a></dd>
+    </dl>
+  </main>
 </body>
 </html>
-
